@@ -14,15 +14,15 @@ My [LinkedIn Profile](https://www.linkedin.com/in/matheusluznugas/) if you want 
 - [x] 1-5:  _Shell Script_
 ##### Bloco 2:  Git, GitHub e Internet
 - [x]  2-1:  _O que é e para que serve?_
-- [ ]  2-2:  _Entendendo os comandos_
-- [ ]   2-3:  _Internet - Entendendo como ela funciona_
+- [x]  2-2:  _Entendendo os comandos_
+- [x]   2-3:  _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3:  Introdução à HTML e CSS
-- [ ]  3-1:  _HTML & CSS - Estruturas de página_
-- [ ]   3-2:  _HTML & CSS - Primeiros passos em CSS_
-- [ ]   3-3:  _HTML & CSS - Seletores e posicionamento_
-- [ ]   3-4:  _HTML Semântico_
-- [ ]   3-5:  *Projeto - HTML & CSS*
+- [x]  3-1:  _HTML & CSS - Estruturas de página_
+- [x]   3-2:  _HTML & CSS - Primeiros passos em CSS_
+- [x]   3-3:  _HTML & CSS - Seletores e posicionamento_
+- [x]   3-4:  _HTML Semântico_
+- [x]   3-5:  [*Projeto - HTML & CSS*](https://github.com/tryber/sd-016-b-project-lessons-learned/pull/19)
  
 ##### Bloco 4:  Introdução à JavaScript e Lógica de Programação
 
