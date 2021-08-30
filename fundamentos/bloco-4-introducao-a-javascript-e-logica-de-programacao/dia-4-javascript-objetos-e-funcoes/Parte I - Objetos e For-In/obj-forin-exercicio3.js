@@ -1,3 +1,5 @@
+// 3 - Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
+
 let info = {
     personagem: 'Margarida',
     origem: 'Pato Donald',
@@ -5,6 +7,7 @@ let info = {
     recorrente: 'Sim'
   };
 
-for (index in info) { 
-    console.log (info[index])
+
+for (let index in info) {
+    console.log (index)
 }
