@@ -44,15 +44,23 @@
     <script>
     
     // Exercicio 1
-    let paragrafo = document.getElementsByTagName("p");
-    function changeP (param) {
-        for (let i = 0; i < param.length; i+=1) {
-         param[1].innerText = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eum sint quibusdam ratione. Impedit nulla at"   
-       }
+
+    function changeP () {
+        let paragrafo = document.getElementsByTagName("p")[1];
+        paragrafo.innerText = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eum sint quibusdam ratione. Impedit nulla at"   
     }
-    changeP(paragrafo);
+    changeP();
+
     // Finalizado
 
+
+
+    function changeMain () {
+        let caixaAmarela = document.getElementsByClassName("main-content")[0];
+        caixaAmarela.style.background = "rgb(76, 164, 109"
+    }
+
+    changeMain ();
     
 
         /*
