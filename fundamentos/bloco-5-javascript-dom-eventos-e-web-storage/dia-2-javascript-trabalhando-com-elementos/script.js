@@ -32,6 +32,7 @@ mainContent.appendChild (secondSection);
 
 let thirdSection = document.createElement ('section');
 thirdSection.class = 'right-content';
+thirdSection.style.marginRight = 'auto'
 mainContent.appendChild (thirdSection);
 
 // Exercicio 7;
@@ -45,11 +46,12 @@ secondSection.appendChild (leftImage);
 
 const arr = ["um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
 
+const unordList = document.createElement ('ul');
+thirdSection.appendChild (unordList);
+
 for (let index in arr) {
-    const unordList = document.createElement ('ul');
-    let listItems = document.createElement ('li');
+    const listItems = document.createElement ('li');
     listItems.innerHTML = arr[index];
-    thirdSection.appendChild (unordList);
     unordList.appendChild (listItems);
 }
 
@@ -58,8 +60,14 @@ for (let index in arr) {
 for (let i = 0; i < 3; i += 1) {
     let subSubTitle = document.createElement ('h3');
     subSubTitle.innerText = `Olá ${i}`
+    subSubTitle.class = "description"
     mainContent.appendChild (subSubTitle)
 }
 
 // PARTE 2
 
+mainContent.removeChild (secondSection)
+mainContent.style.backgroundColor = "green"
+
+unordList.lastChild.remove()
+unordList.lastChild.remove()
