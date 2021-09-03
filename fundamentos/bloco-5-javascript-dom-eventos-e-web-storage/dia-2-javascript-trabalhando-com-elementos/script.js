@@ -7,4 +7,16 @@ document.body.appendChild (title)
 
 let mainContent = document.createElement ('main');
 mainContent.class = "main-content";
-document.body.appendChild (mainContent)
+document.body.appendChild (mainContent);
+
+// Exercicio 3;
+
+let firstSection = document.createElement ("section");
+firstSection.class = "center-content";
+mainContent.appendChild (firstSection);
+
+// Exercicio 4;
+
+let mainParagraph = document.createElement ('p');
+mainParagraph.innerText = "Lorem Ipsum rocks your socks";
+firstSection.appendChild (mainParagraph)
