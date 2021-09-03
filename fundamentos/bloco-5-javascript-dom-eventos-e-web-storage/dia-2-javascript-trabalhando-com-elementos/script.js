@@ -51,3 +51,11 @@ for (let index in arr) {
     thirdSection.appendChild (unordList);
     unordList.appendChild (listItems);
 }
+
+// Exercicio 9;
+
+for (let i = 0; i < 3; i += 1) {
+    let subSubTitle = document.createElement ('h3');
+    subSubTitle.innerText = `Olá ${i}`
+    mainContent.appendChild (subSubTitle)
+}
