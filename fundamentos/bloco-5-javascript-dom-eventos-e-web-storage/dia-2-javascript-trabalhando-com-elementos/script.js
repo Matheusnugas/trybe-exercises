@@ -1,6 +1,7 @@
 // Exercicio 1
 let title = document.createElement ('h1');
 title.innerText = "Exercício 5.2 - Javascript DOM";
+title.class = "title"
 document.body.appendChild (title)
 
 // Exercicio 2;
