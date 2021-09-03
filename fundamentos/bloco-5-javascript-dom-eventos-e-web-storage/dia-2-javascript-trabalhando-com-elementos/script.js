@@ -38,4 +38,16 @@ mainContent.appendChild (thirdSection);
 let leftImage = document.createElement ('img');
 leftImage.src = "https://picsum.photos/200"
 leftImage.class = 'small-image';
-secondSection.appendChild (leftImage)
+secondSection.appendChild (leftImage);
+
+// Exercicio 8;
+
+const arr = ["um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+
+for (let index in arr) {
+    const unordList = document.createElement ('ul');
+    let listItems = document.createElement ('li');
+    listItems.innerHTML = arr[index];
+    thirdSection.appendChild (unordList);
+    unordList.appendChild (listItems);
+}
