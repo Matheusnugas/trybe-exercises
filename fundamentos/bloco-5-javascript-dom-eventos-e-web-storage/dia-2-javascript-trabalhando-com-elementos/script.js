@@ -59,3 +59,6 @@ for (let i = 0; i < 3; i += 1) {
     subSubTitle.innerText = `Olá ${i}`
     mainContent.appendChild (subSubTitle)
 }
+
+// PARTE 2
+
