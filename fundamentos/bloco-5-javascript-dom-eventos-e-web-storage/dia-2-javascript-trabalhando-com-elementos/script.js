@@ -19,4 +19,16 @@ mainContent.appendChild (firstSection);
 
 let mainParagraph = document.createElement ('p');
 mainParagraph.innerText = "Lorem Ipsum rocks your socks";
-firstSection.appendChild (mainParagraph)
+firstSection.appendChild (mainParagraph);
+
+// Exercicio 5;
+
+let secondSection = document.createElement ('section');
+secondSection.class = 'left-content';
+mainContent.appendChild (secondSection);
+
+// Exercicio 6;
+
+let thirdSection = document.createElement ('section');
+thirdSection.class = 'right-content';
+mainContent.appendChild (thirdSection)
