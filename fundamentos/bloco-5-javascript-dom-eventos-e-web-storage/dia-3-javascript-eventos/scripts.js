@@ -127,7 +127,7 @@ function showFridays() {
 
   buttonFriday.addEventListener("click", function () {
     for (let i = 0; i < fridays.length; i += 1) {
-      if (fridays[i].style.backgroundcolor === fridayColor) {
+      if (fridays[i].style.backgroundColor === fridayColor) {
         fridays[i].style.backgroundColor = originalColor;
       } else {
         fridays[i].style.backgroundColor = fridayColor;
