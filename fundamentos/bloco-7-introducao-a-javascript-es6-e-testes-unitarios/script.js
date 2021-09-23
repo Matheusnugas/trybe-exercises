@@ -33,3 +33,40 @@ const crescentes = arr => {
 }
 
 console.log (`Os números ${crescentes(oddsAndEvens)} se encontram em ordem crescente`);
+
+// Parte II
+// Abaixo, você verá algumas especificações de algoritmos para desenvolver. É fundamental que você utilize o que aprendeu sobre let , const , arrow functions , template literals e ternary operator .
+// Crie uma função que receba um número e retorne seu fatorial.
+// Na matemática, o fatorial de um número não negativo N , com a notação N! , é o produto de todos os inteiros menores ou iguais a N . Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
+// Bônus (opcional): tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator .
+// Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+let factorial = n => {
+  let result = 1;
+  if (n == 0 || n == 1) {
+    return answer;
+  } else {
+    for (let i = 1; i <= n; i+=1) {
+      result *= i
+    }
+  }
+  return result;
+}
+
+console.log(factorial(6))
+
+// TERNARY OPERATOR - RECURSIVE APPROACH // 
+
+let ternFactorial = n => n == 0 ? 1 : n * (ternFactorial(n-1));
+
+console.log (ternFactorial(6));
+
+
+// Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+let longestWord = str => { 
+  let bigWord = str.split(' ').sort((a, b) => b.length - a.length)
+  return bigWord[0]; 
+}
+
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
