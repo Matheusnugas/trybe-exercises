@@ -83,3 +83,13 @@ console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu
 // Exemplo: "Tryber x aqui! Minhas cinco principais habilidades são:
 // JavaScript;
 // HTML; ... #goTrybe".
+
+const skills = ['NodeJS', 'Javascript', 'CSS', 'HTML', 'REACT'];
+
+const replaceX = (string1, string2) => {
+  let newString = string1.replace(/x/g, string2);
+  return `${newString}`
+} 
+
+const alphabetical = string => `${string} minhas cinco principais habilidades são ${skills.sort()}`;
+console.log(alphabetical(replaceX('Tryber x aqui!', 'Matheus')))
