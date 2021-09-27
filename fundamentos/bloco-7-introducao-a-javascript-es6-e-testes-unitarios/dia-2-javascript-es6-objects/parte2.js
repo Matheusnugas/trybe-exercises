@@ -24,4 +24,12 @@ let addNightShift = (object, value = 'noite', chave = 'turno',) => {
     object[chave] = value;
     return object;
 }
-console.log (modifyShift(lesson2));
+// 2 -Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro. 
+
+let listObjectKeys = object => Object.keys(object);
+
+// 3 - Crie uma função para mostrar o tamanho de um objeto. 
+
+let showObjectLength = object => Object.keys(object).length;
+
+console.log(showObjectLength(lesson3))
