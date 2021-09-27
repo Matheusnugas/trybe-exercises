@@ -46,7 +46,27 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 let studentTotal = object => {
     return object.lesson1.numeroEstudantes + object.lesson2.numeroEstudantes + object.lesson3.numeroEstudantes;
 }
-console.log (studentTotal(allLessons))
+
+// 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+let showObjectValueIndex = (object, index) => Object.values(object)[index];
+
+// 8 - Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
+
+let verifyPair = (object, key, value) => {
+    let array = Object.entries(object);
+    let equality = 0
+    for (let i = 0; i < array.length; i+=1) {
+        if (array[i][0] == key && array[i][1] == value) {
+           equality = true;
+        } else {
+           equality = false;
+        }
+    }
+    return equality;
+}
+console.log(verifyPair(lesson2,'professor', 'Carlos'));
+
+
 
 
 
