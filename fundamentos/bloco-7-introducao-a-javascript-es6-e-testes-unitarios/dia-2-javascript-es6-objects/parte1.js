@@ -45,7 +45,7 @@ const pedido = {
     let newBuyer = order.name = 'Luiz Silva';
     let newTotal = order.payment.total = '50';
     let pizzas = Object.keys(order.order.pizza)
-
+    
     let message = `Olá ${newBuyer}, o total do seu pedido de ${pizzas[1]}, ${pizzas[0]} e ${order.order.drinks.coke.type} é R$ ${newTotal}`;
 
     return message;

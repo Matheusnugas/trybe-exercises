@@ -64,8 +64,6 @@ let verifyPair = (object, key, value) => {
     }
     return equality;
 }
-console.log(verifyPair(lesson2,'professor', 'Carlos'));
-
 
 
 
