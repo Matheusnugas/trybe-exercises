@@ -56,5 +56,23 @@ const callBackFunction = (param1, param2) => {
   }
 }
 
-console.log(checkRightAmount(RIGHT_ANSWERS, STUDENT_ANSWERS, callBackFunction))
+console.log(checkRightAmount(RIGHT_ANSWERS, STUDENT_ANSWERS, callBackFunction));
 
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const checkAnswers = (array1, array2) => {
+  let count = 0;
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] == array2[i]) {
+      count += 1;
+    } else if (array2[i] == 'N.A') {
+      count = count
+    } else {
+      count += -0.5;
+    }
+  }
+  return `You got ${count} right!`
+}
+
+console.log(checkAnswers(RIGHT_ANSWERS, STUDENT_ANSWERS))
