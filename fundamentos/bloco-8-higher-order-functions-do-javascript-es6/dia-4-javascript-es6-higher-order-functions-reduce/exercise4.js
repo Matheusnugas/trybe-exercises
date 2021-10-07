@@ -63,9 +63,13 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  const bookWithLongestName = () => {
-    let longBook = books.sort((bookA, bookB) => bookA.name.length - bookB.name.length)
-    return longBook[longBook.length -1]
-  }
+//   const bookWithLongestName = () => {
+//     let longBook = books.sort((bookA, bookB) => bookA.name.length - bookB.name.length)
+//     return longBook[longBook.length -1]
+//   }
+
+  const bookWithLongestName = () => (
+    books.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr)
+  )
 
   console.log(bookWithLongestName())
