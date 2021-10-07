@@ -12,4 +12,7 @@ const containsA = () => {
     return count;
 }
 
+// Using Reduce
+// const containsA = () => names.reduce((acc, curr) => acc + curr.match(/a/gi).length, 0)
+
 console.log(containsA())
