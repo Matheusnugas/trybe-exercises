@@ -2,5 +2,3 @@
 // Dica: use parâmetro rest .
 
 const sum = (...numbers) => numbers.reduce((acc, curr) => acc + curr);
-
-console.log(sum(1,3,7,9))
