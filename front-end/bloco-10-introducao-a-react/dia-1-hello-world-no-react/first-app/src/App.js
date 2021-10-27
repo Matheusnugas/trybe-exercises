@@ -7,6 +7,8 @@ const Task = (value) => {
   );
 }
 
+const appointments = ['Study', 'Go out', 'Sleep', 'Eat'];
+
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,7 @@ function App() {
         </a>
       </header>
       <ol>
-        {Task('Olá amigo!')}
+        {appointments.map((appointment) => Task(appointment))}
       </ol>
     </div>
   );
