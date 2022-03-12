@@ -38,3 +38,5 @@ const imc = () => {
 }
 
 imc();
+
+module.exports = imc;

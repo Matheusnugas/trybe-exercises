@@ -19,3 +19,5 @@ const randomLuck = () => {
 }
 
 randomLuck();
+
+module.exports = randomLuck;
