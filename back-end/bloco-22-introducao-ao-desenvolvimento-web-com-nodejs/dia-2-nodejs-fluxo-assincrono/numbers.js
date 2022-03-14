@@ -5,7 +5,7 @@ const numbers = (num1, num2, num3) => {
       typeof num2 !== "number" ||
       typeof num3 !== "number"
     ) {
-      throw new Error("Informe apenas números");
+      reject(new Error("Somente números"));
     }
     const result = (num1 + num2) * num3;
     resolve(result);
@@ -13,6 +13,6 @@ const numbers = (num1, num2, num3) => {
   return promise;
 };
 
-numbers(3, 1, 2)
+numbers(3, "a", 2)
   .then((result) => console.log(`sucesso: ${result}`))
   .catch((err) => console.log(`erro: ${err.message}`));
