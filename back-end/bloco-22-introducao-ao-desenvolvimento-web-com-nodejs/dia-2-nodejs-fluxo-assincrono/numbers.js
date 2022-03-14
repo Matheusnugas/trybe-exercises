@@ -14,6 +14,10 @@ const numbers = (num1, num2, num3) => {
   return promise;
 };
 
-numbers(40, 1, 2)
+const createRandomNumber = () => {
+  return Math.floor(Math.random() * 10 + 1);
+};
+
+numbers(createRandomNumber(), createRandomNumber(), createRandomNumber())
   .then((result) => console.log(`sucesso: ${result}`))
   .catch((err) => console.log(`erro: ${err.message}`));
