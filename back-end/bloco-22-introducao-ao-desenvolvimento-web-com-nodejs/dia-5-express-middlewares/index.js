@@ -18,8 +18,7 @@ const btc = fetching();
 
 const authMiddleWare = (req, res, next) => {
   const tokenHeader = req.headers.authorization;
-  const token = "1234567890a2";
-  if (!tokenHeader || tokenHeader !== token || token.length !== 12) {
+  if (!tokenHeader || tokenHeader.length !== 12) {
     return res.status(401).json({ message: "Token is not correct!" });
   }
   next();
